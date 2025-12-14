@@ -1,0 +1,71 @@
+region,sku,quantity_sold,revenue
+Gweru,Wholegrain Brown,9778,13722.33
+Harare,Whole Wheat,9434,13744.91
+Kwekwe,High Energy White,9355,12214.98
+Bindura,High Energy White,9205,12026.85
+Mutare,Family Loaf,8985,19782.83
+Harare,Family Loaf,8945,19703.64
+Bindura,Seed Loaf,8943,13449.08
+Chitungwiza,High Energy White,8897,11620.01
+Kwekwe,Whole Wheat,8868,12919.75
+Bindura,Whole Wheat,8822,12843.54
+Bulawayo,High Energy White,8756,11443.76
+Mutare,Whole Wheat,8746,12745.19
+Bindura,Wholegrain Brown,8744,12259.03
+Gweru,Whole Wheat,8717,12699.74
+Chitungwiza,Family Loaf,8707,19169.65
+Kwekwe,Seed Loaf,8704,13132.79
+Bindura,Family Loaf,8698,19126.49
+Bindura,Soft White,8685,10464.04
+Masvingo,Family Loaf,8633,19058.1
+Masvingo,Whole Wheat,8630,12561.12
+Mutare,High Energy White,8620,11253.58
+Harare,High Energy White,8575,11222.98
+Harare,Seed Loaf,8555,12903.84
+Chitungwiza,Whole Wheat,8531,12433.84
+Bulawayo,Soft White,8518,10270.07
+Chitungwiza,Soft White,8492,10273.65
+Kwekwe,High Energy Brown,8464,11058.99
+Mutare,Seed Loaf,8455,12751.55
+Masvingo,High Energy Brown,8424,11009.76
+Gweru,Family Loaf,8421,18580.76
+Bulawayo,High Energy Brown,8412,10981.26
+Masvingo,Wholegrain Brown,8341,11729.87
+Gweru,Seed Loaf,8336,12569.42
+Gweru,Soft White,8318,10012.77
+Gweru,High Energy Brown,8278,10801.76
+Masvingo,High Energy White,8244,10791.14
+Harare,High Energy Brown,8064,10536.34
+Mutare,Wholegrain Brown,8063,11319.57
+Harare,Soft White,7976,9624.29
+Mutare,Soft White,7943,9558.64
+Harare,Wholegrain Brown,7858,11072.17
+Kwekwe,Wholegrain Brown,7808,10975.93
+Bulawayo,Seed Loaf,7691,11606.84
+Gweru,High Energy White,7665,10001.07
+Bulawayo,Whole Wheat,7630,11123.07
+Chitungwiza,Seed Loaf,7614,11479.95
+Kwekwe,Family Loaf,7611,16722.67
+Bulawayo,Family Loaf,7483,16511.46
+Mutare,High Energy Brown,7462,9734.39
+Chitungwiza,Wholegrain Brown,7368,10352.97
+Masvingo,Seed Loaf,7261,10963.59
+Chitungwiza,High Energy Brown,7203,9431.17
+Kwekwe,Soft White,7182,8642.56
+Bulawayo,Wholegrain Brown,7148,10080.92
+Bindura,High Energy Brown,7083,9273.22
+Masvingo,Soft White,7015,8437.36
+Bindura,WholegrainBrown,71,102.44
+Harare,WholegrainBrown,59,84.96
+Bulawayo,HighEnergyBrown,54,69.12
+Chitungwiza,WholegrainBrown,44,60.28
+Bindura,HighEnergyBrown,42,55.86
+Mutare,HighEnergyBrown,36,47.16
+Gweru,WholegrainBrown,31,44.02
+Harare,SoftWhite,27,32.67
+Chitungwiza,HighEnergyBrown,24,31.51
+Mutare,SoftWhite,17,20.16
+Kwekwe,SoftWhite,10,11.9
+Gweru,HighEnergyBrown,9,11.7
+Masvingo,WholegrainBrown,3,4.23
+Chitungwiza,SoftWhite,2,2.44

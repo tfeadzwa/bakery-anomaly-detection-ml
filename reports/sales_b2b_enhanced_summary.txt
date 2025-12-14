@@ -1,0 +1,301 @@
+================================================================================
+SALES DATASET (B2B CHANNEL) - ENHANCED SUMMARY REPORT
+Analysis Period: Wholesale/Depot Distribution to Stores
+================================================================================
+
+================================================================================
+1. OVERALL B2B SALES METRICS
+================================================================================
+Total B2B Orders: 15,099
+Total Units Distributed: 2,445,004
+Total Revenue (Wholesale): $3,501,155.09
+Unique Stores Served: 139
+Active Depots: 11
+Distribution Routes: 50
+SKUs Distributed: 25
+Average Order Size: 161.9 units
+Average Order Value: $231.88
+Average Wholesale Price: $1.43/unit
+
+================================================================================
+2. DEPOT DISTRIBUTION PERFORMANCE
+================================================================================
+
+Top 5 Depots by Volume:
+1. Mutare_Branch:
+   - Units Distributed: 258,107 (10.6%)
+   - Revenue: $368,414.45 (10.5%)
+   - Stores Served: 139
+   - Routes Used: 50
+   - Avg Order Size: 164.5 units
+2. Marondera_Depot:
+   - Units Distributed: 257,959 (10.6%)
+   - Revenue: $373,646.89 (10.7%)
+   - Stores Served: 139
+   - Routes Used: 50
+   - Avg Order Size: 161.9 units
+3. Chitungwiza_Depot:
+   - Units Distributed: 250,889 (10.3%)
+   - Revenue: $361,235.60 (10.3%)
+   - Stores Served: 139
+   - Routes Used: 50
+   - Avg Order Size: 161.1 units
+4. Bindura_Depot:
+   - Units Distributed: 247,705 (10.1%)
+   - Revenue: $357,932.09 (10.2%)
+   - Stores Served: 139
+   - Routes Used: 50
+   - Avg Order Size: 161.8 units
+5. Masvingo_Branch:
+   - Units Distributed: 247,556 (10.1%)
+   - Revenue: $353,061.03 (10.1%)
+   - Stores Served: 139
+   - Routes Used: 50
+   - Avg Order Size: 162.3 units
+
+📊 Depot Concentration: Top 3 depots = 31.4% of volume
+   ✅ BALANCED: Healthy distribution across depot network
+
+================================================================================
+3. STORE ORDERING PATTERNS
+================================================================================
+
+Top 10 Stores by Volume:
+1. STORE_087: 23,658 units, 142 orders, $33,998.38 revenue, Avg: 166.6 units/order (Primary depot: Bindura_Depot)
+2. STORE_095: 23,144 units, 129 orders, $32,693.12 revenue, Avg: 179.4 units/order (Primary depot: Marondera_Depot)
+3. STORE_139: 22,122 units, 131 orders, $32,188.84 revenue, Avg: 168.9 units/order (Primary depot: Harare_Willowvale)
+4. STORE_044: 21,420 units, 124 orders, $31,121.63 revenue, Avg: 172.7 units/order (Primary depot: Bulawayo_Branch)
+5. STORE_036: 21,396 units, 117 orders, $31,002.87 revenue, Avg: 182.9 units/order (Primary depot: Bindura_Depot)
+6. STORE_111: 21,384 units, 127 orders, $31,572.48 revenue, Avg: 168.4 units/order (Primary depot: Bindura_Depot)
+7. STORE_101: 21,001 units, 119 orders, $30,268.66 revenue, Avg: 176.5 units/order (Primary depot: Chitungwiza_Depot)
+8. STORE_016: 20,992 units, 130 orders, $30,700.43 revenue, Avg: 161.5 units/order (Primary depot: Masvingo_Branch)
+9. STORE_112: 20,721 units, 128 orders, $30,541.08 revenue, Avg: 161.9 units/order (Primary depot: Bindura_Depot)
+10. STORE_083: 20,636 units, 124 orders, $28,937.75 revenue, Avg: 166.4 units/order (Primary depot: Chitungwiza_Depot)
+
+📦 Average Orders per Store: 108.6 orders
+📦 Average Order Size per Store: 161.9 units
+
+🏪 High-Volume Stores (top 25%): 35 stores account for significant volume
+
+================================================================================
+4. DISTRIBUTION ROUTE EFFICIENCY
+================================================================================
+
+Top 10 Routes by Volume:
+1. RT_033:
+   - Units Distributed: 57,314
+   - Trips: 350
+   - Stores Served: 131
+   - Avg Units/Trip: 163.8
+   - Primary Depot: Marondera_Depot
+2. RT_038:
+   - Units Distributed: 56,041
+   - Trips: 339
+   - Stores Served: 128
+   - Avg Units/Trip: 165.3
+   - Primary Depot: Marondera_Depot
+3. RT_017:
+   - Units Distributed: 54,824
+   - Trips: 329
+   - Stores Served: 121
+   - Avg Units/Trip: 166.6
+   - Primary Depot: Mutare_Branch
+4. RT_027:
+   - Units Distributed: 54,062
+   - Trips: 328
+   - Stores Served: 127
+   - Avg Units/Trip: 164.8
+   - Primary Depot: Bindura_Depot
+5. RT_009:
+   - Units Distributed: 53,678
+   - Trips: 311
+   - Stores Served: 128
+   - Avg Units/Trip: 172.6
+   - Primary Depot: Mutare_Branch
+6. RT_024:
+   - Units Distributed: 53,469
+   - Trips: 310
+   - Stores Served: 121
+   - Avg Units/Trip: 172.5
+   - Primary Depot: Mutare_Branch
+7. RT_035:
+   - Units Distributed: 53,355
+   - Trips: 337
+   - Stores Served: 119
+   - Avg Units/Trip: 158.3
+   - Primary Depot: Chitungwiza_Depot
+8. RT_001:
+   - Units Distributed: 52,957
+   - Trips: 335
+   - Stores Served: 125
+   - Avg Units/Trip: 158.1
+   - Primary Depot: Chitungwiza_Depot
+9. RT_037:
+   - Units Distributed: 52,575
+   - Trips: 325
+   - Stores Served: 124
+   - Avg Units/Trip: 161.8
+   - Primary Depot: Harare_Southerton
+10. RT_045:
+   - Units Distributed: 52,496
+   - Trips: 322
+   - Stores Served: 123
+   - Avg Units/Trip: 163.0
+   - Primary Depot: Bindura_Depot
+
+🚚 Route Efficiency Metrics:
+   - Average units per trip: 161.9 units
+   - Average stores per route: 121.6 stores
+   - Most efficient route: RT_009 (172.6 units/trip)
+   - Least efficient route: RT_019 (153.8 units/trip)
+
+================================================================================
+5. SKU DEMAND IN B2B CHANNEL
+================================================================================
+
+Top 10 SKUs by B2B Volume:
+1. Buns 6-Pack:
+   - Units: 282,834 (11.6%)
+   - Revenue: $325,888.51
+   - Avg Wholesale Price: $1.15/unit
+   - Stores Ordering: 139 (100.0% coverage)
+2. High Energy Brown:
+   - Units: 269,893 (11.0%)
+   - Revenue: $364,816.05
+   - Avg Wholesale Price: $1.35/unit
+   - Stores Ordering: 139 (100.0% coverage)
+3. High Energy White:
+   - Units: 269,803 (11.0%)
+   - Revenue: $364,881.22
+   - Avg Wholesale Price: $1.35/unit
+   - Stores Ordering: 139 (100.0% coverage)
+4. Whole Wheat:
+   - Units: 267,399 (10.9%)
+   - Revenue: $400,141.42
+   - Avg Wholesale Price: $1.50/unit
+   - Stores Ordering: 139 (100.0% coverage)
+5. Family Loaf:
+   - Units: 264,332 (10.8%)
+   - Revenue: $594,784.88
+   - Avg Wholesale Price: $2.25/unit
+   - Stores Ordering: 139 (100.0% coverage)
+6. Seed Loaf:
+   - Units: 263,818 (10.8%)
+   - Revenue: $408,329.90
+   - Avg Wholesale Price: $1.55/unit
+   - Stores Ordering: 139 (100.0% coverage)
+7. Mini Rolls 6-Pack:
+   - Units: 260,237 (10.6%)
+   - Revenue: $273,429.84
+   - Avg Wholesale Price: $1.05/unit
+   - Stores Ordering: 139 (100.0% coverage)
+8. Wholegrain Brown:
+   - Units: 258,111 (10.6%)
+   - Revenue: $374,323.26
+   - Avg Wholesale Price: $1.45/unit
+   - Stores Ordering: 139 (100.0% coverage)
+9. Soft White:
+   - Units: 254,633 (10.4%)
+   - Revenue: $317,914.22
+   - Avg Wholesale Price: $1.25/unit
+   - Stores Ordering: 139 (100.0% coverage)
+10. Milk1L:
+   - Units: 8,111 (0.3%)
+   - Revenue: $11,674.88
+   - Avg Wholesale Price: $1.45/unit
+   - Stores Ordering: 43 (30.9% coverage)
+
+📊 SKU Portfolio:
+   - Total SKUs: 25
+   - Top 5 SKUs: 55.4% of volume
+   - Top 10 SKUs: 98.1% of volume
+
+================================================================================
+6. WHOLESALE PRICING STRUCTURE
+================================================================================
+
+SKU Pricing (Wholesale):
+Overall Average Wholesale Price: $1.43/unit
+Price Range: $0.90 - $2.40
+
+Top 5 Most Expensive SKUs (Wholesale):
+1. Family Loaf: $2.25 avg ($2.10-$2.40)
+2. SeedLoaf: $1.57 avg ($1.41-$1.70)
+3. Seed Loaf: $1.55 avg ($1.40-$1.70)
+4. Seed Lof: $1.54 avg ($1.40-$1.68)
+5. Whole Whet: $1.51 avg ($1.37-$1.64)
+
+💰 Pricing Insights:
+   - Wholesale avg: $1.43/unit
+   - Price variability: Std Dev = $0.34
+   ℹ️  Compare with Sales POS (retail) to validate margin structure
+
+================================================================================
+7. TEMPORAL ORDERING PATTERNS (B2B)
+================================================================================
+
+📅 Daily Metrics:
+   - Average daily volume: 11533 units
+   - Average stores ordering per day: 55.4
+   - Peak day volume: 18,640 units
+   - Lowest day volume: 6,585 units
+
+📊 Day of Week Patterns:
+   - Highest volume day: Monday (359,217 units)
+   - Lowest volume day: Friday (338,752 units)
+
+⏰ Hourly Ordering Patterns:
+   - Peak hour: 00:00 (128,981 units)
+   - Slowest hour: 07:00 (92,059 units)
+
+================================================================================
+8. B2B CHANNEL CHARACTERISTICS
+================================================================================
+
+📦 B2B Order Profile:
+   - Average B2B order size: 161.9 units
+   - Median B2B order size: 161 units
+   - 75th percentile: 240 units
+   - 95th percentile: 305 units
+   ℹ️  Compare with Sales POS avg order size (~31 units) for B2B vs B2C validation
+   ℹ️  B2B orders should be 3-5x larger (depot→store vs store→consumer)
+
+🔗 Network Structure:
+   - Depots → Stores: 11 depots serving 139 stores
+   - Average stores per depot: 12.6
+   - Routes connecting network: 50
+   - Average stores per route: 121.6
+
+================================================================================
+9. DEPOT-SPECIFIC SKU DEMAND
+================================================================================
+
+Depot-SKU Matrix Summary:
+   - Total depot-SKU combinations: 235
+   - Bindura_Depot top SKU: Family Loaf (31,748 units)
+   - Bulawayo_Branch top SKU: Buns 6-Pack (28,815 units)
+   - Chitungwiza_Depot top SKU: Whole Wheat (30,078 units)
+   - DIRECT top SKU: Buns 6-Pack (1,911 units)
+   - Gweru_Branch top SKU: Seed Loaf (30,724 units)
+
+================================================================================
+10. KEY INSIGHTS & ACTION ITEMS
+================================================================================
+
+🎯 Critical Findings:
+
+1. BALANCED DEPOT NETWORK (31.4%)
+   → Strength: No single-point-of-failure in depot network
+   → Action: Maintain balanced load distribution
+
+2. HEALTHY B2B ORDER SIZES (161.9 units)
+   → Strength: Bulk ordering reduces distribution frequency/cost
+   → Action: Maintain MOQ policies, volume discounts
+
+4. SKU COVERAGE ACROSS STORES: 45.0%
+   → Issue: Low SKU availability across store network
+   → Action: Improve depot SKU stocking, demand forecasting
+
+================================================================================
+END OF REPORT
+================================================================================

@@ -1,0 +1,205 @@
+================================================================================
+SALES / RETAIL POS DATASET - EXPLORATORY DATA ANALYSIS
+================================================================================
+
+📊 DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Total Sales Transactions: 15,000
+Date Range: 2025-01-01 00:29:15 to 2025-07-30 23:31:25
+Total Units Sold: 464,793
+Total Revenue: $691,359.70
+Average Transaction Size: 31.0 units
+Average Price: $1.49
+Unique Retailers: 199
+Regions: 8 - Bindura, Bulawayo, Chitungwiza, Gweru, Harare, Kwekwe, Masvingo, Mutare
+SKUs: 10
+
+🎯 PROMOTION OVERVIEW
+--------------------------------------------------------------------------------
+Sales with Promotions: 293 (2.0%)
+Sales without Promotions: 14,707 (98.0%)
+Unique Promotions: 4
+
+Promotion vs Non-Promotion Performance:
+               quantity_sold           revenue        price
+                         sum   mean        sum   mean  mean
+promotion_flag                                             
+0                     452260  30.75  674327.14  45.85  1.49
+1                      12533  42.77   17032.56  58.13  1.36
+
+✅ Promotion Uplift: +39.1% quantity, +26.8% revenue per transaction
+
+Top Promotions by Sales Volume:
+                        Units Sold  Revenue  Transactions
+promotion_name                                           
+Women’s Day Promo             3514  4630.83            80
+Africa Day Promo              3388  4815.53            79
+Independence Day Promo        2901  3948.28            71
+Valentine Promo               2688  3591.72            62
+
+🌍 REGIONAL DEMAND ANALYSIS
+--------------------------------------------------------------------------------
+             Units Sold  ...  Avg Revenue/Transaction
+region                   ...                         
+Bindura           60293  ...                    46.45
+Gweru             59553  ...                    46.31
+Harare            59493  ...                    46.93
+Mutare            58327  ...                    46.39
+Kwekwe            58002  ...                    45.09
+Chitungwiza       56882  ...                    46.02
+Masvingo          56551  ...                    45.88
+Bulawayo          55692  ...                    45.63
+
+[8 rows x 6 columns]
+
+🍞 SKU PERFORMANCE ANALYSIS
+--------------------------------------------------------------------------------
+                   Units Sold  ...  % of Total Revenue
+sku                            ...                    
+Whole Wheat             69378  ...                14.6
+High Energy White       69317  ...                13.1
+Family Loaf             67483  ...                21.5
+Seed Loaf               65559  ...                14.3
+Wholegrain Brown        65108  ...                13.2
+Soft White              64129  ...                11.2
+High Energy Brown       63390  ...                12.0
+WholegrainBrown           208  ...                 0.0
+HighEnergyBrown           165  ...                 0.0
+SoftWhite                  56  ...                 0.0
+
+[10 rows x 6 columns]
+
+Fast-Moving SKUs (Top 5 by daily avg):
+sku
+Whole Wheat          328.805687
+High Energy White    328.516588
+Family Loaf          319.824645
+Seed Loaf            310.706161
+Wholegrain Brown     308.568720
+Name: quantity_sold, dtype: float64
+
+Slow-Moving SKUs (Bottom 5 by daily avg):
+sku
+Soft White           303.928910
+High Energy Brown    300.426540
+WholegrainBrown       34.666667
+HighEnergyBrown       18.333333
+SoftWhite             11.200000
+Name: quantity_sold, dtype: float64
+
+⏰ TEMPORAL DEMAND PATTERNS
+--------------------------------------------------------------------------------
+Sales by Day of Week:
+           Units    Revenue  Transactions
+day_name                                 
+Monday     68595  102667.60          2193
+Tuesday    61508   91653.97          2038
+Wednesday  67780  101375.29          2209
+Thursday   64481   96009.28          2108
+Friday     68626  101055.84          2147
+Saturday   64531   95568.96          2084
+Sunday     69272  103028.76          2221
+
+Weekday vs Weekend:
+        quantity_sold           revenue       
+                  sum   mean        sum   mean
+Weekday        330990  30.95  492761.98  46.07
+Weekend        133803  31.08  198597.72  46.13
+
+Hourly Sales Summary:
+      Total Units  Avg Units/Sale  Transactions
+hour                                           
+0           21283            30.8           692
+1           18838            31.0           607
+2           18925            30.8           614
+3           19260            30.3           635
+4           20669            31.7           651
+5           19029            30.9           616
+6           19821            31.4           632
+7           17579            30.7           573
+8           19013            30.1           631
+9           20130            31.3           643
+10          21742            31.6           687
+11          19009            30.8           618
+12          18823            30.7           613
+13          18884            31.9           592
+14          18604            30.9           603
+15          19557            31.0           631
+16          19661            30.7           641
+17          18938            29.7           637
+18          20601            31.8           647
+19          20247            31.2           648
+20          19588            32.0           612
+21          17566            30.5           575
+22          18327            31.4           583
+23          18699            30.2           619
+
+Peak Sales Hour: 10:00 (21742 units)
+Lowest Sales Hour: 21:00 (17566 units)
+
+💲 PRICE ANALYSIS
+--------------------------------------------------------------------------------
+Price Statistics by SKU:
+                   Min Price  Avg Price  Max Price  Std Dev
+sku                                                        
+Family Loaf             1.95       2.20       2.25     0.04
+High Energy Brown       1.14       1.31       1.35     0.03
+High Energy White       1.14       1.31       1.35     0.03
+HighEnergyBrown         1.27       1.30       1.34     0.02
+Seed Loaf               1.32       1.51       1.55     0.03
+Soft White              1.05       1.21       1.25     0.03
+SoftWhite               1.18       1.20       1.22     0.02
+Whole Wheat             1.28       1.46       1.50     0.03
+Wholegrain Brown        1.23       1.41       1.45     0.03
+WholegrainBrown         1.37       1.42       1.45     0.03
+
+Price vs Quantity Correlation by SKU:
+  Family Loaf: -0.090 (weak relationship)
+  Wholegrain Brown: -0.074 (weak relationship)
+  High Energy Brown: -0.057 (weak relationship)
+  Soft White: -0.096 (weak relationship)
+  Seed Loaf: 0.004 (weak relationship)
+  High Energy White: -0.047 (weak relationship)
+  Whole Wheat: -0.027 (weak relationship)
+
+🏪 TOP RETAILERS BY SALES VOLUME
+--------------------------------------------------------------------------------
+             Units Sold  Revenue  Transactions  Avg Units/Transaction
+retailer_id                                                          
+STORE_041          3133  4868.56           100                   31.3
+STORE_150          3094  4522.39           106                   29.2
+STORE_100          3034  4568.43            91                   33.3
+STORE_063          3028  4379.15            91                   33.3
+STORE_106          3001  4507.68            93                   32.3
+STORE_155          2989  4290.37            92                   32.5
+STORE_111          2981  4549.15            91                   32.8
+STORE_028          2945  4189.40            97                   30.4
+STORE_109          2913  4311.71            84                   34.7
+STORE_147          2894  4452.41            96                   30.1
+STORE_164          2879  4479.67            89                   32.3
+STORE_121          2863  4155.91            82                   34.9
+STORE_014          2840  4140.75            85                   33.4
+STORE_107          2812  4239.09            85                   33.1
+STORE_036          2779  4273.86            90                   30.9
+STORE_024          2764  4054.16            85                   32.5
+STORE_050          2742  4008.71            85                   32.3
+STORE_173          2741  3905.28            78                   35.1
+STORE_034          2726  3884.07            87                   31.3
+STORE_152          2718  4191.50            75                   36.2
+
+🎯 KEY INSIGHTS & ACTION ITEMS
+================================================================================
+1. ⚠️ 19 retailers with very low sales (<10th percentile)
+   Action: Investigate stock-outs, poor locations, or dispatch issues
+
+2. Check for retailers receiving dispatch but showing zero/low sales
+   Action: Cross-reference with dispatch_dataset to identify overstock situations
+
+4. 2 slow-moving SKUs identified
+   Action: Consider reducing production or discontinuing low-demand products
+
+5. Bindura is the strongest market (60,293 units)
+   Action: Expand retailer network and dispatch capacity in high-demand regions
+
+================================================================================
+✅ Sales POS summary complete!

@@ -1,0 +1,25 @@
+Waste Dataset Summary
+============================================================
+Shape: 14070 rows × 18 columns
+
+Columns: waste_id, timestamp, plant_id, stage, sku, qty_waste, waste_reason_code, batch_id, shift, route_id, retailer_id, temperature_at_check, handling_condition, notes, hour, dayofweek, date, is_weekend
+
+Data types:
+object            13
+float64            2
+datetime64[ns]     1
+int64              1
+bool               1
+Name: count, dtype: int64
+
+Missing values:
+timestamp                 17
+batch_id                5736
+route_id                8350
+retailer_id             8334
+temperature_at_check      56
+notes                   5591
+hour                      17
+dayofweek                 17
+date                      17
+dtype: int64

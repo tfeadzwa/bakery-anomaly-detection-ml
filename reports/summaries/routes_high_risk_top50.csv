@@ -1,0 +1,51 @@
+route_id,route_name,vehicle_id,driver_id,distance_km,stops_count,estimated_time_minutes,load_capacity_kg,capacity_strain,risk_score,region
+RT_008,Bulawayo - Nkulumane Loop,TRUCK_004,DRIVER_012,108.4,19,102,3000,0.32,0.74,Bulawayo
+RT_052,Chitungwiza - Unit L Loop,TRUCK_103,DRIVER_133,105.4,19,51,3000,0.32,0.73,Chitungwiza
+RT_008,Bindura - Astra Mine Route,TRUCK_007,DRIVER_143,101.7,19,103,3000,0.32,0.72,Bindura
+RT_014,Kwekwe - CBD Run,TRUCK_024,DRIVER_112,91.4,20,202,3000,0.33,0.71,Kwekwe
+RT_014,Mutare - Sakubva Market Loop,TRUCK_099,DRIVER_104,92.5,19,171,3000,0.32,0.69,Mutare
+RT_063,Masvingo - Mucheke Loop,TRUCK_112,DRIVER_039,109.2,18,75,5000,0.18,0.67,Masvingo
+RT_030,Gweru - Mkoba Route,TRUCK_099,DRIVER_147,71.8,20,146,3000,0.33,0.65,Gweru
+RT_009,Gweru - Southdowns Loop,TRUCK_110,DRIVER_108,84.8,20,177,4500,0.22,0.64,Gweru
+RT_057,Chitungwiza - Unit L Loop,TRUCK_109,DRIVER_135,106.1,17,133,5000,0.17,0.64,Chitungwiza
+RT_003,Bulawayo - Nkulumane Loop,TRUCK_048,DRIVER_042,105.3,15,178,3000,0.25,0.64,Bulawayo
+RT_006,Mutare - Yeovil Loop,TRUCK_080,DRIVER_040,96.5,18,100,4500,0.2,0.64,Mutare
+RT_030,Chitungwiza - Seke Highway Route,TRUCK_111,DRIVER_082,107.5,16,128,4500,0.18,0.63,Chitungwiza
+RT_008,Harare - Eastlea Express,TRUCK_037,DRIVER_054,88.6,19,150,5000,0.19,0.63,Harare North
+RT_038,Bulawayo - City Center Run,TRUCK_110,DRIVER_037,101.5,18,158,7000,0.13,0.63,Bulawayo
+RT_060,Bulawayo - Nkulumane Loop,TRUCK_096,DRIVER_122,99.7,15,108,3000,0.25,0.62,Bulawayo
+RT_002,Gweru - Mkoba Route,TRUCK_078,DRIVER_044,82.9,19,176,4500,0.21,0.62,Gweru
+RT_057,Mutare - Sakubva Market Loop,TRUCK_082,DRIVER_145,103.7,15,66,4500,0.17,0.6,Mutare
+RT_005,Bulawayo - Pumula Route,TRUCK_044,DRIVER_053,73.4,20,215,5000,0.2,0.6,Bulawayo
+RT_041,Mutare - Yeovil Loop,TRUCK_014,DRIVER_024,104.3,16,41,7000,0.11,0.6,Mutare
+RT_031,Chitungwiza - Seke Highway Route,TRUCK_074,DRIVER_081,86.3,19,88,7000,0.14,0.6,Chitungwiza
+RT_027,Gweru - Southdowns Loop,TRUCK_078,DRIVER_110,79.0,19,82,5000,0.19,0.6,Gweru
+RT_066,Gweru - Southdowns Loop,TRUCK_007,DRIVER_026,97.4,16,84,5000,0.16,0.6,Gweru
+RT_005,Mutare - Sakubva Market Loop,TRUCK_034,DRIVER_102,77.2,19,73,5000,0.19,0.59,Mutare
+RT_037,Harare - CBD Loop,TRUCK_058,DRIVER_013,84.1,19,102,7000,0.14,0.59,Harare South
+RT_013,Gweru - Mkoba Route,TRUCK_032,DRIVER_031,86.4,17,182,4500,0.19,0.59,Gweru
+RT_033,Bindura - Astra Mine Route,TRUCK_115,DRIVER_102,105.5,14,128,4500,0.16,0.59,Bindura
+RT_056,Mutare - Sakubva Market Loop,TRUCK_073,DRIVER_049,64.2,20,166,4500,0.22,0.58,Mutare
+RT_007,Masvingo - Rujeko Run,TRUCK_094,DRIVER_081,70.6,17,151,3000,0.28,0.58,Masvingo
+RT_008,Bulawayo - Pumula Route,TRUCK_036,DRIVER_134,72.7,19,164,5000,0.19,0.58,Bulawayo
+RT_032,Harare - Borrowdale Extension,TRUCK_013,DRIVER_101,89.5,16,135,5000,0.16,0.57,Harare South
+RT_063,Bulawayo - City Center Run,TRUCK_029,DRIVER_079,88.8,16,147,5000,0.16,0.57,Bulawayo
+RT_011,Bindura - Chiwaridzo Loop,TRUCK_011,DRIVER_062,58.9,20,144,4500,0.22,0.57,Bindura
+RT_027,Harare - Eastlea Express,TRUCK_040,DRIVER_132,108.9,13,141,7000,0.09,0.56,Harare North
+RT_062,Bindura - Astra Mine Route,TRUCK_045,DRIVER_042,84.9,14,106,3000,0.23,0.56,Bindura
+RT_060,Harare - CBD Loop,TRUCK_050,DRIVER_143,65.2,19,141,5000,0.19,0.56,Harare South
+RT_029,Mutare - Sakubva Market Loop,TRUCK_113,DRIVER_142,68.8,18,203,4500,0.2,0.56,Mutare
+RT_029,Harare - Eastlea Express,TRUCK_115,DRIVER_077,81.2,16,80,4500,0.18,0.55,Harare South
+RT_036,Harare - CBD Loop,TRUCK_039,DRIVER_119,81.9,17,212,7000,0.12,0.55,Harare North
+RT_018,Bindura - Astra Mine Route,TRUCK_076,DRIVER_040,75.5,18,146,7000,0.13,0.55,Bindura
+RT_054,Masvingo - Rujeko Run,TRUCK_064,DRIVER_008,78.3,16,137,4500,0.18,0.55,Masvingo
+RT_065,Bindura - Astra Mine Route,TRUCK_061,DRIVER_040,79.5,14,92,3000,0.23,0.54,Bindura
+RT_034,Mutare - Yeovil Loop,TRUCK_073,DRIVER_050,71.1,18,84,7000,0.13,0.53,Mutare
+RT_031,Harare - CBD Loop,TRUCK_056,DRIVER_035,82.8,16,107,7000,0.11,0.53,Harare North
+RT_032,Bulawayo - City Center Run,TRUCK_065,DRIVER_121,80.6,15,55,4500,0.17,0.53,Bulawayo
+RT_017,Kwekwe - Redcliff Loop,TRUCK_019,DRIVER_058,82.4,16,213,7000,0.11,0.53,Kwekwe
+RT_032,Harare - Mt Pleasant Run,TRUCK_034,DRIVER_149,32.8,20,187,3000,0.33,0.53,Harare North
+RT_002,Kwekwe - CBD Run,TRUCK_071,DRIVER_003,82.1,15,214,5000,0.15,0.53,Kwekwe
+RT_045,Mutare - Sakubva Market Loop,TRUCK_066,DRIVER_100,69.6,18,147,7000,0.13,0.53,Mutare
+RT_016,Bulawayo - City Center Run,TRUCK_117,DRIVER_037,56.1,19,99,5000,0.19,0.53,Bulawayo
+RT_059,Harare - Borrowdale Extension,TRUCK_016,DRIVER_115,104.9,11,84,4500,0.12,0.53,Harare North

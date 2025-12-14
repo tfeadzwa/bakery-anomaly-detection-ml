@@ -1,0 +1,192 @@
+================================================================================
+RETURNS DATASET - EXPLORATORY DATA ANALYSIS
+================================================================================
+
+↩️ DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Total Return Records: 13,065
+Date Range: 2025-01-01 00:00:37 to 2025-07-30 23:31:25
+Total Units Returned: 791,043
+Average Return Size: 60.5 units
+Median Return: 61 units
+Routes Affected: 69
+Retailers Returning: 199
+SKUs Returned: 17
+
+🔍 RETURN ROOT CAUSE ANALYSIS
+--------------------------------------------------------------------------------
+                   Total Units  Avg Units/Return  Incidents  % of Total
+reason_code                                                            
+Mould Growth            118620         61.716961       1922       15.00
+Expired                 115653         60.902054       1899       14.62
+Damaged Packaging       115149         60.224372       1912       14.56
+Crushed/Squashed        112889         60.465453       1867       14.27
+Returned Unsold         111380         60.896665       1829       14.08
+Stale                   108730         59.285714       1834       13.75
+Wrong Delivery          108622         60.278579       1802       13.73
+
+🎯 **TOP RETURN REASON:** Mould Growth
+   118,620 units (15.0% of all returns)
+   Priority action: Address quality/logistics issues
+
+Preventable Returns (Expired/Damaged/Crushed/Mould): 462,311 units (58.4%)
+Demand Mismatch (Returned Unsold): 111,380 units (14.1%)
+
+🚛 ROUTE-LEVEL RETURN ANALYSIS (Top 15)
+--------------------------------------------------------------------------------
+          Total Returned  Avg per Return  Incidents  Retailers  % of Total
+route_id                                                                  
+RT_058             15174       65.973913        230        132        1.92
+RT_014             13010       69.202128        188        124        1.64
+RT_063             12826       61.663462        208        130        1.62
+RT_026             12812       59.041475        217        131        1.62
+RT_030             12771       61.399038        208        122        1.61
+RT_024             12701       58.529954        217        128        1.61
+RT_010             12690       61.902439        205        131        1.60
+RT_006             12658       62.354680        203        126        1.60
+RT_052             12621       60.971014        207        137        1.60
+RT_002             12458       61.980100        201        131        1.57
+RT_004             12386       59.835749        207        128        1.57
+RT_068             12200       63.541667        192        118        1.54
+RT_053             12155       63.638743        191        121        1.54
+RT_041             12135       61.913265        196        122        1.53
+RT_017             12111       60.859296        199        124        1.53
+
+⚠️ **WORST PERFORMING ROUTE:** RT_058 (15,174 units returned)
+   Action: Investigate dispatch timing, cold chain, demand forecasting for this route
+
+🏪 RETAILER-LEVEL RETURN ANALYSIS (Top 15)
+--------------------------------------------------------------------------------
+             Total Returned  Avg per Return  Incidents  % of Total
+retailer_id                                                       
+STORE_086              5936       67.454545         88        0.75
+STORE_092              5508       68.850000         80        0.70
+STORE_005              5378       61.113636         88        0.68
+STORE_063              5361       67.012500         80        0.68
+STORE_168              5336       69.298701         77        0.67
+STORE_113              5326       68.282051         78        0.67
+STORE_120              5275       56.720430         93        0.67
+STORE_173              5052       60.142857         84        0.64
+STORE_022              5034       65.376623         77        0.64
+STORE_130              4955       58.294118         85        0.63
+STORE_073              4913       70.185714         70        0.62
+STORE_100              4881       64.223684         76        0.62
+STORE_149              4870       60.875000         80        0.62
+STORE_143              4836       62.000000         78        0.61
+STORE_170              4786       57.662651         83        0.61
+
+⚠️ **WORST PERFORMING RETAILER:** STORE_086 (5,936 units returned)
+   Action: Review storage conditions, demand patterns, or consider reducing dispatch volumes
+
+🍞 SKU-LEVEL RETURN ANALYSIS
+--------------------------------------------------------------------------------
+                   Total Returned  Avg per Return  Incidents  % of Total
+sku                                                                     
+Soft White                 115239       60.812137       1895       14.57
+Wholegrain Brown           112523       59.852660       1880       14.22
+High Energy White          111517       60.246894       1851       14.10
+Whole Wheat                111508       59.661851       1869       14.10
+Seed Loaf                  110911       61.209161       1812       14.02
+High Energy Brown          110770       61.063947       1814       14.00
+Family Loaf                108864       61.193929       1779       13.76
+Milk1L                       1999       62.468750         32        0.25
+Coke500ml                    1583       51.064516         31        0.20
+DishSoap                     1345       61.136364         22        0.17
+PotatoChips                  1206       63.473684         19        0.15
+Whole grain Brown            1205       66.944444         18        0.15
+Soft Whtie                    597       59.700000         10        0.08
+High Energy Brwn              472       78.666667          6        0.06
+HighEnergyBrown               468       58.500000          8        0.06
+WholegrainBrown               453       37.750000         12        0.06
+SoftWhite                     383       54.714286          7        0.05
+
+⚠️ High-Return SKUs (>10% of total returns): 7
+                   Total Returned  % of Total
+sku                                          
+Soft White                 115239       14.57
+Wholegrain Brown           112523       14.22
+High Energy White          111517       14.10
+Whole Wheat                111508       14.10
+Seed Loaf                  110911       14.02
+High Energy Brown          110770       14.00
+Family Loaf                108864       13.76
+
+🌡️ TEMPERATURE CORRELATION WITH RETURNS
+--------------------------------------------------------------------------------
+count    13021.000000
+mean        24.457054
+std          5.276116
+min         18.000000
+25%         20.800000
+50%         23.600000
+75%         26.300000
+max         45.000000
+Name: temperature_at_return, dtype: float64
+
+Returns with temp > 35°C: 837 (6.4%)
+Units returned at high temp: 50,842 (6.4% of total)
+
+🤲 HANDLING CONDITION IMPACT
+--------------------------------------------------------------------------------
+                    Total Returned  Incidents  % of Total
+handling_condition                                       
+Temperature Abuse           160239       2619       20.26
+Normal                      159758       2649       20.20
+Condensation                159170       2638       20.12
+Exposure to Sun             159137       2609       20.12
+Poor Handling               152739       2550       19.31
+
+📅 TEMPORAL RETURN PATTERNS
+--------------------------------------------------------------------------------
+Returns by Day of Week:
+            Total        Avg  Incidents
+day_name                               
+Monday     117075  61.135770       1915
+Tuesday    111119  61.493636       1807
+Wednesday  113027  59.362920       1904
+Thursday   114093  61.044944       1869
+Friday     108028  60.283482       1792
+Saturday   109916  60.895291       1805
+Sunday     113940  59.716981       1908
+
+Peak Return Day: Monday (117075 units)
+
+Weekday vs Weekend:
+        qty_returned           
+                 sum       mean
+Weekday       567187  60.648738
+Weekend       223856  60.289793
+
+Returns by Month:
+month
+1.0    116340
+2.0    105882
+3.0    113993
+4.0    117216
+5.0    115253
+6.0    110979
+7.0    107535
+Name: qty_returned, dtype: int64
+
+🎯 KEY INSIGHTS & ACTION ITEMS
+================================================================================
+1. **Total returns:** 791,043 units across 13,065 incidents
+   Impact: Returns often lead to waste - critical to prevent
+
+2. **Top return reason:** Mould Growth (15.0%)
+   Action: Address quality control and cold chain
+
+3. **Worst route:** RT_058 (15,174 units)
+   Action: Route-specific investigation - dispatch timing, vehicle condition, demand patterns
+
+4. **Worst retailer:** STORE_086 (5,936 units)
+   Action: Retailer partnership review - storage, forecasting, or reduce allocation
+
+5. **High-temperature returns:** 50,842 units at >35°C
+   Action: Cold chain monitoring, refrigeration at retailers
+
+6. **Preventable returns:** 462,311 units (quality/logistics issues)
+   Action: QC improvement, dispatch optimization, packaging reinforcement
+
+================================================================================
+✅ Returns summary complete!

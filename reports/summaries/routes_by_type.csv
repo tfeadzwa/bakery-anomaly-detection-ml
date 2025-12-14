@@ -1,0 +1,4 @@
+route_type,num_configs,avg_distance_km,min_distance_km,max_distance_km,avg_time_min,avg_stops,avg_efficiency,avg_risk_score
+Urban,53,19.19,10.4,30.0,136.28,13.38,0.17,0.32
+Suburban,60,44.68,32.0,60.0,142.53,12.23,0.36,0.38
+Rural,103,84.82,60.3,109.2,126.97,13.17,0.81,0.51

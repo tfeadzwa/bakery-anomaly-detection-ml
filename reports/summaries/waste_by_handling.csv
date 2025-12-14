@@ -1,0 +1,6 @@
+handling_condition,qty_waste_sum,qty_waste_mean,qty_waste_count,temperature_at_check_mean
+Rough Handling,267925,93.22,2874,24.41
+Normal,260944,92.3,2827,24.52
+Sun Exposure,259643,93.6,2774,24.46
+Heat Damage,259002,91.98,2816,24.49
+Condensation,255776,92.04,2779,24.5

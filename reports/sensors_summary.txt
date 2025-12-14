@@ -1,0 +1,38 @@
+Sensors/IoT Dataset Summary
+============================================================
+Shape: 18090 rows × 9 columns
+
+Columns: sensor_id, timestamp, plant_id, equipment_id, metric_name, metric_value, date, hour, dayofweek
+
+Data types:
+object            6
+float64           2
+datetime64[ns]    1
+Name: count, dtype: int64
+
+Missing values:
+timestamp       17
+plant_id        98
+metric_value    81
+date            17
+hour            17
+dayofweek       17
+dtype: int64
+
+Metric Value Stats:
+  Mean: 68.41
+  Median: 20.43
+  Std: 103.80
+  Min: 0.00
+  Max: 1981.39
+
+Top Metric Names:
+  Oven Temperature: 3,644
+  Motor Vibration: 3,596
+  Belt Speed: 3,562
+  Humidity Level: 1,890
+  Seal Integrity: 1,848
+  Air Temperature: 1,775
+  Detection Event: 1,775
+
+Unique Equipment: 10

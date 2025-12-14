@@ -1,0 +1,29 @@
+Returns Dataset Summary
+============================================================
+Shape: 13065 rows × 14 columns
+
+Columns: return_id, timestamp, route_id, retailer_id, sku, qty_returned, reason_code, notes, temperature_at_return, handling_condition, hour, dayofweek, date, is_weekend
+
+Data types:
+object            9
+float64           2
+datetime64[ns]    1
+int64             1
+bool              1
+Name: count, dtype: int64
+
+Missing values:
+timestamp                  65
+route_id                   38
+notes                    4483
+temperature_at_return      44
+hour                       65
+dayofweek                  65
+date                       65
+dtype: int64
+
+Return Quantity Stats:
+  Total returned: 791,043
+  Mean: 60.55
+  Median: 61.00
+  Max: 242

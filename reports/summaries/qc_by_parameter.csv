@@ -1,0 +1,8 @@
+parameter,total_checks,passed,failed,mean_value,std_value,min_value,max_value,unique_batches,fail_rate_%
+crust_color_level,2694,1198,1496,2.92,2.6,-1.49,7.5,2328,55.53
+slice_uniformity_mm,2603,1189,1414,4.03,2.59,-0.5,8.5,2231,54.32
+internal_temp_c,2555,1356,1199,96.08,3.21,90.5,101.49,2214,46.93
+moisture_percent,2513,1554,959,34.99,3.76,28.51,41.5,2186,38.16
+texture_score,2536,1620,916,5.49,4.04,-1.5,12.49,2187,36.12
+weight_grams,2584,2305,279,700.0,12.89,677.52,722.49,2221,10.8
+package_seal_strength,2605,2328,277,99.93,12.77,77.51,122.48,2229,10.63

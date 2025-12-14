@@ -1,0 +1,99 @@
+======================================================================
+DISPATCH DATASET SUMMARY
+======================================================================
+Dataset Shape: 16,080 dispatch events × 16 columns
+Date Range: 2025-01-01 to 2025-07-30
+
+----------------------------------------------------------------------
+DISPATCH VOLUME OVERVIEW
+----------------------------------------------------------------------
+Total Units Dispatched: 4,686,166
+Mean Dispatch Quantity: 291.4 units per trip
+Total Dispatch Events: 16,080
+
+Plants Dispatching: 2
+  Willowvale_Plant: 8,040 dispatches (50.0%)
+  Shepperton_Plant: 8,040 dispatches (50.0%)
+
+Unique Routes: 69
+Avg Dispatches per Route: 233.0
+
+Unique Vehicles: 89
+Avg Dispatches per Vehicle: 180.7
+
+Unique Retailers Served: 199
+Avg Deliveries per Retailer: 80.8
+
+Unique SKUs Dispatched: 16
+
+Top 5 SKUs by Dispatch Count:
+  Soft White: 2,331 dispatches (14.5%)
+  Seed Loaf: 2,318 dispatches (14.4%)
+  Whole Wheat: 2,311 dispatches (14.4%)
+  Family Loaf: 2,287 dispatches (14.2%)
+  High Energy White: 2,246 dispatches (14.0%)
+
+----------------------------------------------------------------------
+ON-TIME DELIVERY PERFORMANCE
+----------------------------------------------------------------------
+Mean Delay: 17.1 minutes
+Median Delay: 17.0 minutes
+95th Percentile Delay: 42.0 minutes
+
+✅ On-Time Delivery Rate: 74.56% (within ±30 minutes)
+⚠️  WARNING: On-time rate below 80% target
+
+Delay Category Breakdown:
+  On-Time (±30min): 8,805 (54.8%)
+  Late (30-60min): 4,090 (25.4%)
+  Early (<30min): 3,185 (19.8%)
+  Very Early (>30min): 0 (0.0%)
+  Very Late (>60min): 0 (0.0%)
+
+----------------------------------------------------------------------
+ROUTE PERFORMANCE
+----------------------------------------------------------------------
+Top 10 Routes with Longest Delays:
+  RT_007: 19.5 min avg delay (71.7% on-time, 223 trips)
+  RT_018: 19.4 min avg delay (70.1% on-time, 241 trips)
+  RT_021: 19.1 min avg delay (72.3% on-time, 264 trips)
+  RT_063: 19.0 min avg delay (69.1% on-time, 220 trips)
+  RT_069: 18.8 min avg delay (71.6% on-time, 229 trips)
+  RT_026: 18.7 min avg delay (68.5% on-time, 235 trips)
+  RT_032: 18.6 min avg delay (74.5% on-time, 239 trips)
+  RT_036: 18.6 min avg delay (73.2% on-time, 254 trips)
+  RT_025: 18.5 min avg delay (69.6% on-time, 247 trips)
+  RT_020: 18.5 min avg delay (73.7% on-time, 232 trips)
+
+----------------------------------------------------------------------
+VEHICLE PERFORMANCE
+----------------------------------------------------------------------
+Top 5 Vehicles with Longest Delays (min 10 trips):
+  TRUCK_005: 19.6 min avg delay (73.5% on-time, 200 trips)
+  TRUCK_031: 19.5 min avg delay (71.1% on-time, 173 trips)
+  TRUCK_020: 19.0 min avg delay (73.4% on-time, 184 trips)
+  TRUCK_034: 18.9 min avg delay (74.4% on-time, 172 trips)
+  TRUCK_048: 18.9 min avg delay (69.0% on-time, 184 trips)
+
+----------------------------------------------------------------------
+TIME PATTERNS
+----------------------------------------------------------------------
+Peak Delay Hour: 15.0:00 (18.5 min avg delay)
+Best Performance Hour: 13.0:00 (15.7 min avg delay)
+
+Average Delay by Day of Week:
+  Monday: 16.5 minutes
+  Tuesday: 17.4 minutes
+  Wednesday: 17.2 minutes
+  Thursday: 17.4 minutes
+  Friday: 17.3 minutes
+  Saturday: 17.2 minutes
+  Sunday: 17.0 minutes
+
+----------------------------------------------------------------------
+CRITICAL INSIGHTS & ACTION ITEMS
+----------------------------------------------------------------------
+⚠️  CRITICAL: 74.6% on-time rate (Target: >90%)
+    Action: Immediate route optimization and vehicle review
+
+======================================================================

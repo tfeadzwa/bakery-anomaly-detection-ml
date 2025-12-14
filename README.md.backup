@@ -1,4 +1,4 @@
-# üçû TAPS - Supply Chain Analytics & Waste Prediction
+# ÌΩû TAPS - Supply Chain Analytics & Waste Prediction
 
 **Advanced Analytics Platform for Bakery Supply Chain Optimization**
 
@@ -6,15 +6,15 @@ A comprehensive end-to-end analytics solution for predicting, preventing, and re
 
 ---
 
-## üìã Project Overview
+## Ì≥ã Project Overview
 
-**Primary Goal:** üìâ How much waste can we predict, prevent, and reduce?
+**Primary Goal:** Ì≥â How much waste can we predict, prevent, and reduce?
 
 This project implements a complete supply chain intelligence system analyzing 10+ interconnected datasets spanning the entire value chain:
 
 - **Production** ‚Üí Quality Control ‚Üí Dispatch ‚Üí Distribution ‚Üí Sales ‚Üí Returns/Waste ‚Üí **Inventory Reconciliation**
 
-### üéØ Key Objectives
+### ÌæØ Key Objectives
 
 1. **Waste Prediction**: Build ML models to forecast waste 24-48 hours ahead
 2. **Root Cause Analysis**: Identify primary waste drivers (production, cold chain, logistics)
@@ -24,7 +24,7 @@ This project implements a complete supply chain intelligence system analyzing 10
 
 ---
 
-## üö® Critical Findings
+## Ì∫® Critical Findings
 
 ### **Data Integrity Crisis**
 - **29.2% of inventory movements show negative balances** (5,286 out of 18,073 records)
@@ -51,7 +51,7 @@ This project implements a complete supply chain intelligence system analyzing 10
 
 ---
 
-## üìä Datasets Analyzed
+## Ì≥ä Datasets Analyzed
 
 | Dataset | Records | Key Insights |
 |---------|---------|--------------|
@@ -62,27 +62,27 @@ This project implements a complete supply chain intelligence system analyzing 10
 | **Sales (B2B)** | 15,099 orders | 2.45M units, 162 units/order (5.2X retail) |
 | **Waste** | 14,070 incidents | **1.3M units**, 59.3% production-stage |
 | **Returns** | 13,065 incidents | **791K units**, 58.4% preventable |
-| **Inventory** | 18,073 movements | **üö® 29.2% negative balances**, 8.6% flow efficiency |
+| **Inventory** | 18,073 movements | **Ì∫® 29.2% negative balances**, 8.6% flow efficiency |
 | **Route Metadata** | 216 configs | 69 routes, 101 vehicles, 31.7 km/h avg speed |
 | **IoT Sensors** | 450,000 readings | Temp/humidity/vibration monitoring |
 
 ---
 
-## üöÄ Quick Start
+## Ì∫Ä Quick Start
 
 ### **Prerequisites**
 - Python 3.10+
-- Git
+- Git  
 - 8GB+ RAM recommended
 
 ### **1. Clone Repository**
-```bash
+\`\`\`bash
 git clone https://github.com/YOUR_USERNAME/taps-supply-chain-analytics.git
 cd taps-supply-chain-analytics
-```
+\`\`\`
 
 ### **2. Setup Environment**
-```bash
+\`\`\`bash
 # Create virtual environment
 python -m venv .venv
 
@@ -90,57 +90,57 @@ python -m venv .venv
 source .venv/Scripts/activate
 
 # Activate (Windows PowerShell)
-.venv\Scripts\Activate.ps1
+.venv\\Scripts\\Activate.ps1
 
 # Activate (Linux/Mac)
 source .venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
-```
+\`\`\`
 
 ### **3. Prepare Data**
-```bash
+\`\`\`bash
 # Place your raw datasets in data/raw/
 # Then run data pipeline
 python src/data/prepare_data.py
-```
+\`\`\`
 
 ### **4. Run EDA Scripts**
-```bash
+\`\`\`bash
 # Generate comprehensive analysis reports
 python src/analysis/eda_production.py
 python src/analysis/eda_quality_control.py
 python src/analysis/eda_inventory_enhanced.py
 python src/analysis/eda_routes_transport_meta.py
-```
+\`\`\`
 
 Each script generates:
-- Comprehensive text summary in `reports/`
-- 10-12 visualizations in `reports/figures/`
-- 6-8 CSV summaries in `reports/summaries/`
+- Comprehensive text summary in \`reports/\`
+- 10-12 visualizations in \`reports/figures/\`
+- 6-8 CSV summaries in \`reports/summaries/\`
 
 ### **5. Launch Streamlit Dashboards**
 
 **Main EDA Explorer (Recommended):**
-```bash
+\`\`\`bash
 streamlit run app/streamlit_eda_explorer.py --server.port 8506
-```
+\`\`\`
 Access at: http://localhost:8506
 
 **Dispatch Anomaly Detection:**
-```bash
+\`\`\`bash
 streamlit run app/streamlit_dispatch_explorer.py --server.port 8501
-```
+\`\`\`
 Access at: http://localhost:8501
 
 ---
 
-## üìä Expected Impact & ROI
+## Ì≥ä Expected Impact & ROI
 
 ### **Waste Reduction (30% achievable)**
 - **Current waste**: 1.3M units/year
-- **Target reduction**: 30% = 390K units saved
+- **Target reduction**: 30% = 390K units saved  
 - **Value saved**: 390K √ó $1.43 = **$557,700/year**
 
 ### **Returns Reduction (35% of preventable)**
@@ -161,10 +161,10 @@ Access at: http://localhost:8501
 
 ---
 
-## üõ†Ô∏è Technologies Used
+## Ìª†Ô∏è Technologies Used
 
 - **Python 3.14**: Core programming language
-- **Pandas 2.3.3**: Data manipulation & analysis
+- **Pandas 2.3.3**: Data manipulation & analysis  
 - **NumPy**: Numerical computing
 - **Matplotlib / Seaborn**: Visualization
 - **Streamlit**: Interactive dashboards
@@ -174,7 +174,7 @@ Access at: http://localhost:8501
 
 ---
 
-## üìö Documentation
+## Ì≥ö Documentation
 
 - [**INVENTORY_CRISIS_REPORT.md**](docs/INVENTORY_CRISIS_REPORT.md) - Detailed analysis of 29.2% negative balance crisis
 - [**SALES_POS_EDA_IMPLEMENTATION_SUMMARY.md**](docs/SALES_POS_EDA_IMPLEMENTATION_SUMMARY.md) - B2C sales analysis
@@ -184,22 +184,7 @@ Access at: http://localhost:8501
 
 ---
 
-## ü§ù Contributing
-
-This is an active analytics project. For questions, suggestions, or collaboration:
-- Open an issue for bug reports or feature requests
-- Submit pull requests for improvements
-- Contact the data team for access to additional datasets
-
----
-
-## üìÑ License
-
-This project is proprietary and confidential. Unauthorized distribution prohibited.
-
----
-
-## üéì Project Context
+## Ìæì Project Context
 
 **Business Goal**: Reduce supply chain waste by 30% through data-driven interventions, saving $600K+ annually.
 
@@ -207,8 +192,6 @@ This project is proprietary and confidential. Unauthorized distribution prohibit
 - "Inventory is not just another dataset ‚Äî it is the state of the system."
 - "If inventory is broken, something upstream failed."
 - "Waste is the final loss, but it starts at production."
-
-**Key Insight**: The supply chain is a system. You cannot optimize one component (e.g., dispatch) without understanding how it affects everything else (inventory, waste, returns). This project treats the entire value chain as an interconnected system and uses data to expose hidden failures.
 
 ---
 

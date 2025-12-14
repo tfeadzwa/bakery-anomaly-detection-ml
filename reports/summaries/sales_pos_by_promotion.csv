@@ -1,0 +1,5 @@
+promotion_name,quantity_sold_sum,quantity_sold_mean,quantity_sold_count,revenue_sum,revenue_mean,price_mean,retailer_id_nunique
+Women’s Day Promo,3514,43.92,80,4630.83,57.89,1.32,64
+Africa Day Promo,3388,42.89,79,4815.53,60.96,1.41,65
+Independence Day Promo,2901,40.86,71,3948.28,55.61,1.36,59
+Valentine Promo,2688,43.35,62,3591.72,57.93,1.37,54

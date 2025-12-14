@@ -1,0 +1,11 @@
+waste_reason_code,qty_waste_sum,qty_waste_mean,qty_waste_count
+Contaminated,136900,93.77,1460
+Stale,134568,95.71,1406
+Expired,134089,90.97,1474
+Returned Unsold,134047,93.61,1432
+Damaged Packaging,130563,93.13,1402
+Burnt/Overbaked,128572,92.7,1387
+Crushed,128324,93.12,1378
+Quality Failure,126897,91.95,1380
+Mould Growth,125939,89.89,1401
+Underweight,123391,91.4,1350

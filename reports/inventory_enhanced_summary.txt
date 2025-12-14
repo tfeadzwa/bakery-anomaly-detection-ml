@@ -1,0 +1,232 @@
+================================================================================
+INVENTORY / STOCK MOVEMENTS - ENHANCED SUMMARY REPORT
+The State of the System: Final Reconciliation
+================================================================================
+
+================================================================================
+1. OVERALL INVENTORY MOVEMENT METRICS
+================================================================================
+Total Movement Records: 18,073
+Total Qty In (Production, Returns, Adjustments): 4,278,590 units
+Total Qty Out (Dispatch, Sales, Waste): 3,540,028 units
+Net Movement (In - Out): 738,562 units
+Unique SKUs Tracked: 7
+Unique Locations (Plants + Stores): 201
+Date Range: 2025-01-01 to 2025-11-05
+
+================================================================================
+2. MOVEMENT TYPE BREAKDOWN
+================================================================================
+
+Movement Type Summary:
+
+PRODUCTION:
+   - Records: 3,075 (17.0%)
+   - Qty In: 3,872,229 | Qty Out: 0
+   - Net Movement: 3,872,229
+
+STOCK_ADJUSTMENT:
+   - Records: 3,042 (16.8%)
+   - Qty In: 67,586 | Qty Out: 42,152
+   - Net Movement: 25,434
+
+RETURN_FROM_STORE:
+   - Records: 3,035 (16.8%)
+   - Qty In: 240,854 | Qty Out: 0
+   - Net Movement: 240,854
+
+DISPATCH:
+   - Records: 2,995 (16.6%)
+   - Qty In: 42,800 | Qty Out: 2,667,007
+   - Net Movement: -2,624,207
+
+STORE_SALE:
+   - Records: 2,987 (16.5%)
+   - Qty In: 18,230 | Qty Out: 526,618
+   - Net Movement: -508,388
+
+WASTE:
+   - Records: 2,939 (16.3%)
+   - Qty In: 36,891 | Qty Out: 304,251
+   - Net Movement: -267,360
+
+📊 Movement Distribution:
+   - Production (stock creation): 3,075 records
+   - Dispatch (stock moved): 2,995 records
+   - Store Sales (stock consumed): 2,987 records
+   - Returns (stock recovered): 3,035 records
+   - Waste (stock destroyed): 2,939 records
+   - Adjustments (corrections): 3,042 records
+
+================================================================================
+3. DATA INTEGRITY & ANOMALY DETECTION
+================================================================================
+
+🚨 CRITICAL ANOMALIES DETECTED:
+
+1. NEGATIVE BALANCES: 5,286 records (29.2%)
+   ⚠️  SEVERE DATA INTEGRITY ISSUE!
+   → Causes: Missing sales records, double-counted dispatch, unlogged waste
+   → Impact: Cannot trust inventory levels for 29.2% of movements
+   → Action: Urgent reconciliation with source datasets
+
+   Negative Balance Distribution:
+   - Plant: 1,089 records
+   - Store: 4,197 records
+
+2. BALANCE RECONCILIATION FAILURES: 54 records
+   → Formula: balance_after ≠ balance_before + qty_in - qty_out
+   → Indicates: Calculation errors or data corruption
+   → Action: Audit affected records
+
+3. LARGE STOCK ADJUSTMENTS: 6 records (>100 units)
+   → 0.2% of adjustments are large (>100 units)
+   → Potential causes: Theft, miscounts, reporting errors
+   → Action: Investigate reason_codes for large adjustments
+
+================================================================================
+4. LOCATION-SPECIFIC INVENTORY (PLANT vs STORE)
+================================================================================
+
+Inventory by Location Type:
+
+PLANT:
+   - Movement Records: 12,051
+   - Qty In: 4,019,506 | Qty Out: 3,013,410
+   - Net Movement: 1,006,096
+   - Avg Balance: 29,621 units
+   - Number of Plants: 2
+
+STORE:
+   - Movement Records: 6,022
+   - Qty In: 259,084 | Qty Out: 526,618
+   - Net Movement: -267,534
+   - Avg Balance: -172 units
+   - Number of Stores: 199
+
+📦 Inventory Flow Pattern:
+   - Plants Qty Out: 3,013,410 (production → dispatch)
+   - Stores Qty In: 259,084 (dispatch → inventory)
+   - Flow efficiency: 8.6% (should be ~100%)
+
+================================================================================
+5. SKU INVENTORY LEVELS & TURNOVER
+================================================================================
+
+Top 10 SKUs by Current Inventory Balance:
+1. High Energy Brown:
+   - Current Balance: 65,009 units
+   - Total In: 617,586 | Out: 482,588
+   - Turnover Ratio: 0.78 (Out/In)
+   - Movement Records: 2,528
+2. Wholegrain Brown:
+   - Current Balance: 49,208 units
+   - Total In: 615,814 | Out: 490,789
+   - Turnover Ratio: 0.80 (Out/In)
+   - Movement Records: 2,624
+3. Seed Loaf:
+   - Current Balance: 37,120 units
+   - Total In: 567,010 | Out: 514,323
+   - Turnover Ratio: 0.91 (Out/In)
+   - Movement Records: 2,548
+4. Soft White:
+   - Current Balance: 33,028 units
+   - Total In: 622,927 | Out: 518,899
+   - Turnover Ratio: 0.83 (Out/In)
+   - Movement Records: 2,541
+5. Family Loaf:
+   - Current Balance: 32,455 units
+   - Total In: 624,937 | Out: 490,696
+   - Turnover Ratio: 0.79 (Out/In)
+   - Movement Records: 2,586
+6. Whole Wheat:
+   - Current Balance: 7,718 units
+   - Total In: 632,586 | Out: 537,742
+   - Turnover Ratio: 0.85 (Out/In)
+   - Movement Records: 2,716
+7. High Energy White:
+   - Current Balance: 148 units
+   - Total In: 597,730 | Out: 504,991
+   - Turnover Ratio: 0.84 (Out/In)
+   - Movement Records: 2,530
+
+⚠️  Slow-Moving SKUs (Balance >1000, Turnover <0.5): 0
+
+================================================================================
+6. STOCK EXPIRY RISK ANALYSIS
+================================================================================
+
+Expiry Risk Distribution:
+   - Warning (3-5 days): 15,443 records (85.4%)
+   - Safe: 2,597 records (14.4%)
+   - Expired: 31 records (0.2%)
+   - Critical (0-2 days): 2 records (0.0%)
+
+🚨 Expired Stock Movements: 31 (0.2%)
+
+   Expired Stock by Movement Type:
+   - waste: 7 records
+   - stock_adjustment: 7 records
+   - return_from_store: 6 records
+   - dispatch: 5 records
+   - production: 4 records
+   - store_sale: 2 records
+
+📅 Days to Expiry Statistics:
+   - Mean: 4.4 days
+   - Median: 4.0 days
+   - 25th percentile: 4.0 days
+   - 10th percentile: 4.0 days
+
+================================================================================
+7. SHRINKAGE & STOCK ADJUSTMENTS
+================================================================================
+
+Stock Adjustment Summary:
+   - Total Adjustment Records: 3,042
+   - Adjustments In: 67,586 units (positive corrections)
+   - Adjustments Out: 42,152 units (negative corrections)
+   - Net Adjustment: 25,434 units
+
+📉 Shrinkage Rate: 0.99% of total inbound stock
+
+   Top 5 Adjustment Reasons:
+   - Production: 418 records
+   - Expired Waste: 393 records
+   - Sale: 382 records
+   - Dispatch to Store: 378 records
+   - Shrinkage: 376 records
+
+================================================================================
+8. TEMPORAL INVENTORY PATTERNS
+================================================================================
+
+📅 Daily Metrics:
+   - Average daily qty in: 20,182 units
+   - Average daily qty out: 16,698 units
+   - Average daily net movement: 3,484 units
+   - Average daily balance: 19,701 units
+
+📊 Day of Week Patterns:
+   - Highest in: Wednesday (671,841 units)
+   - Highest out: Monday (560,758 units)
+
+================================================================================
+9. KEY INSIGHTS & CRITICAL ACTION ITEMS
+================================================================================
+
+🎯 Critical Findings:
+
+1. SEVERE DATA INTEGRITY CRISIS: 29.2% NEGATIVE BALANCES
+   → Impact: Cannot trust inventory system for production planning
+   → Root Cause: Likely missing records in sales/dispatch OR double-counting
+   → URGENT ACTION: Halt production decisions until reconciliation complete
+   → Fix: Cross-reference with Sales, Dispatch, Waste datasets
+
+5. BALANCE RECONCILIATION FAILURES: 54 RECORDS
+   → Indicates: Calculation errors or data corruption
+   → Action: Audit affected records, fix data pipeline
+
+================================================================================
+END OF REPORT
+================================================================================

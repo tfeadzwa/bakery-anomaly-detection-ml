@@ -1,0 +1,15 @@
+Location_Type,SKU,Negative_Balance_Count,Min_Balance
+Store,Whole Wheat,641,-1275
+Store,Family Loaf,637,-1265
+Store,Wholegrain Brown,627,-1133
+Store,High Energy Brown,609,-1528
+Store,Soft White,583,-1187
+Plant,Whole Wheat,568,-15691
+Store,High Energy White,551,-1179
+Store,Seed Loaf,549,-1213
+Plant,Family Loaf,189,-13930
+Plant,Seed Loaf,107,-3518
+Plant,Soft White,93,-4132
+Plant,Wholegrain Brown,59,-3862
+Plant,High Energy White,55,-4996
+Plant,High Energy Brown,18,-4258

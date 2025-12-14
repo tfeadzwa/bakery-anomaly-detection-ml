@@ -1,0 +1,14 @@
+sku,total_checks,passed,failed,unique_batches,fail_rate_%
+Whole grain Brown,7,2,5,7,71.43
+SoftWhite,13,6,7,13,53.85
+Soft Whtie,19,10,9,19,47.37
+WholegrainBrown,10,6,4,10,40.0
+Family Loaf,2489,1553,936,826,37.61
+Wholegrain Brown,2534,1598,936,846,36.94
+Whole Wheat,2559,1626,933,849,36.46
+High Energy White,2576,1652,924,854,35.87
+Seed Loaf,2617,1686,931,868,35.58
+Soft White,2719,1752,967,913,35.56
+High Energy Brown,2509,1628,881,844,35.11
+High Energy Brwn,20,16,4,20,20.0
+HighEnergyBrown,18,15,3,18,16.67

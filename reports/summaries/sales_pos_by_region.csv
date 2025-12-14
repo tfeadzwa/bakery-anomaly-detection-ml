@@ -1,0 +1,9 @@
+region,quantity_sold_sum,quantity_sold_mean,revenue_sum,revenue_mean,sale_id_count,retailer_id_nunique,promotion_flag_sum
+Bindura,60293,31.26,89600.55,46.45,1929,199,39
+Gweru,59553,31.18,88443.57,46.31,1910,199,40
+Harare,59493,31.39,88925.8,46.93,1895,199,38
+Mutare,58327,31.02,87213.07,46.39,1880,199,38
+Kwekwe,58002,30.53,85679.57,45.09,1900,199,39
+Chitungwiza,56882,30.85,84855.47,46.02,1844,199,33
+Masvingo,56551,30.68,84555.17,45.88,1843,199,37
+Bulawayo,55692,30.96,82086.5,45.63,1799,199,29

@@ -1,0 +1,221 @@
+================================================================================
+WASTE DATASET - EXPLORATORY DATA ANALYSIS
+================================================================================
+
+🗑️ DATASET OVERVIEW
+--------------------------------------------------------------------------------
+Total Waste Records: 14,070
+Date Range: 2025-01-01 00:00:37 to 2025-07-30 23:31:25
+Total Units Wasted: 1,303,290
+Average Waste per Incident: 92.6 units
+Median Waste: 93 units
+Plants: 2
+SKUs Affected: 16
+Unique Batches: 6796
+
+🏭 WASTE BY STAGE (Production vs Post-Dispatch)
+--------------------------------------------------------------------------------
+               Total Units  Avg Units/Incident  ...  Record Count  % of Total
+stage                                           ...                          
+post_dispatch       531003           92.573745  ...          5736        40.7
+production          772287           92.667027  ...          8334        59.3
+
+[2 rows x 5 columns]
+
+⚠️ **PRODUCTION WASTE DOMINANT:** 772,287 units (59.3%)
+   Action: Focus on production quality, equipment maintenance, batch sizing
+
+🔍 WASTE ROOT CAUSE ANALYSIS (Top 10 Reasons)
+--------------------------------------------------------------------------------
+                   Total Units Wasted  Incidents  % of Total
+waste_reason_code                                           
+Contaminated                   136900       1460       10.50
+Stale                          134568       1406       10.33
+Expired                        134089       1474       10.29
+Returned Unsold                134047       1432       10.29
+Damaged Packaging              130563       1402       10.02
+Burnt/Overbaked                128572       1387        9.87
+Crushed                        128324       1378        9.85
+Quality Failure                126897       1380        9.74
+Mould Growth                   125939       1401        9.66
+Underweight                    123391       1350        9.47
+
+🎯 **TOP WASTE REASON:** Contaminated (10.5% of all waste)
+   Priority action: Root cause analysis and corrective measures for Contaminated
+
+🍞 SKU-LEVEL WASTE ANALYSIS
+--------------------------------------------------------------------------------
+                   Total Wasted  Avg per Incident  ...  Records  % of Total
+sku                                                ...                     
+Wholegrain Brown         192874         94.176758  ...     2048       14.80
+Whole Wheat              188102         93.119802  ...     2020       14.43
+Soft White               183333         91.758258  ...     1998       14.07
+High Energy Brown        182600         92.175669  ...     1981       14.01
+High Energy White        182256         92.421907  ...     1972       13.98
+Seed Loaf                181732         92.625892  ...     1962       13.94
+Family Loaf              181066         92.286442  ...     1962       13.89
+Milk1L                     3077        102.566667  ...       30        0.24
+HandSoap                   1951         92.904762  ...       21        0.15
+Coke500ml                  1837         96.684211  ...       19        0.14
+HighEnergyBrown            1088         83.692308  ...       13        0.08
+SoftWhite                   888         98.666667  ...        9        0.07
+WholegrainBrown             787         65.583333  ...       12        0.06
+Soft Whtie                  691         76.777778  ...        9        0.05
+High Energy Brwn            639         91.285714  ...        7        0.05
+Whole grain Brown           369         52.714286  ...        7        0.03
+
+[16 rows x 5 columns]
+
+⚠️ High-Waste SKUs (>10% of total waste): 7
+                   Total Wasted  % of Total
+sku                                        
+Wholegrain Brown         192874       14.80
+Whole Wheat              188102       14.43
+Soft White               183333       14.07
+High Energy Brown        182600       14.01
+High Energy White        182256       13.98
+Seed Loaf                181732       13.94
+Family Loaf              181066       13.89
+
+🏭 PLANT-LEVEL WASTE PERFORMANCE
+--------------------------------------------------------------------------------
+                  Total Wasted  Avg per Incident  Incidents  % of Total
+plant_id                                                               
+Shepperton_Plant        653110         93.141757       7012       50.11
+Willowvale_Plant        650180         92.119581       7058       49.89
+
+⏰ SHIFT-LEVEL WASTE PATTERNS
+--------------------------------------------------------------------------------
+           Total Wasted  Avg per Incident  Incidents  % of Total
+shift                                                           
+Night            438080         92.852904       4718       33.61
+Morning          435089         93.306670       4663       33.38
+Afternoon        430121         91.729793       4689       33.00
+
+⚠️ **WORST PERFORMING SHIFT:** Night (33.6% of waste)
+   Action: Review shift procedures, staffing, training
+
+🌡️ TEMPERATURE CORRELATION WITH WASTE
+--------------------------------------------------------------------------------
+count    14014.000000
+mean        24.474568
+std          5.340631
+min         18.000000
+25%         20.800000
+50%         23.600000
+75%         26.400000
+max         45.000000
+Name: temperature_at_check, dtype: float64
+
+Waste incidents with temp > 35°C: 955 (6.8%)
+Units wasted at high temp: 86,713 (6.7% of total)
+
+🤲 HANDLING CONDITION IMPACT
+--------------------------------------------------------------------------------
+                    Total Wasted  Incidents  % of Total
+handling_condition                                     
+Rough Handling            267925       2874       20.56
+Normal                    260944       2827       20.02
+Sun Exposure              259643       2774       19.92
+Heat Damage               259002       2816       19.87
+Condensation              255776       2779       19.63
+
+📅 TEMPORAL WASTE PATTERNS
+--------------------------------------------------------------------------------
+Waste by Day of Week:
+            Total        Avg  Incidents
+day_name                               
+Monday     190062  92.084302       2064
+Tuesday    174789  90.988548       1921
+Wednesday  192569  93.298934       2064
+Thursday   188084  91.258612       2061
+Friday     179922  92.839009       1938
+Saturday   186136  94.870540       1962
+Sunday     190287  93.140969       2043
+
+Weekday vs Weekend:
+        qty_waste           
+              sum       mean
+Weekday    926867  92.088127
+Weekend    376423  93.988265
+
+Peak Waste Hour: 0.0:00 (62751 units)
+
+🚛 POST-DISPATCH WASTE ANALYSIS
+--------------------------------------------------------------------------------
+Post-Dispatch Waste: 5,736 incidents, 531,003 units
+
+Top 15 Routes by Waste:
+          Total Wasted  Incidents
+route_id                         
+RT_067            9810         94
+RT_016            9697         97
+RT_051            9596        102
+RT_069            9581         95
+RT_061            9296        106
+RT_059            9264         94
+RT_052            9147         93
+RT_012            9078         96
+RT_018            8820         94
+RT_048            8794         98
+RT_068            8513         91
+RT_007            8508         96
+RT_032            8475         94
+RT_058            8435         87
+RT_063            8428         95
+
+Top 15 Retailers by Waste:
+             Total Wasted  Incidents
+retailer_id                         
+STORE_046            4311         45
+STORE_029            3934         37
+STORE_028            3673         41
+STORE_036            3653         35
+STORE_122            3644         37
+STORE_152            3619         42
+STORE_129            3617         33
+STORE_031            3613         39
+STORE_018            3604         33
+STORE_082            3564         32
+STORE_086            3555         34
+STORE_142            3539         37
+STORE_184            3490         34
+STORE_012            3477         38
+STORE_102            3476         33
+
+🔗 BATCH TRACEABILITY
+--------------------------------------------------------------------------------
+Unique batches with waste: 6,796
+Top 10 batches by waste quantity:
+batch_id
+BATCH_22452    634
+BATCH_21715    566
+BATCH_16054    550
+BATCH_19221    534
+BATCH_21363    527
+BATCH_15253    514
+BATCH_21164    511
+BATCH_21071    505
+BATCH_27636    502
+BATCH_21885    494
+Name: qty_waste, dtype: int64
+
+🎯 KEY INSIGHTS & ACTION ITEMS
+================================================================================
+1. **Total waste:** 1,303,290 units across 14,070 incidents
+   Financial impact: Critical - waste is direct loss
+
+2. **Stage breakdown:** Production (772,287) vs Post-Dispatch (531,003)
+   Focus area: Production quality & equipment
+
+3. **Top waste reason:** Contaminated (10.5%)
+   Action: Immediate root cause analysis and prevention measures
+
+4. **High-temperature waste:** 86,713 units at >35°C
+   Action: Cold chain monitoring, refrigeration maintenance
+
+5. **Worst shift:** Night (33.6% of waste)
+   Action: Shift-specific training and process review
+
+================================================================================
+✅ Waste summary complete!

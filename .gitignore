@@ -43,21 +43,21 @@ env/
 *.ipynb_checkpoints/
 
 # Data files (large datasets)
-data/raw/*.parquet
-data/raw/*.csv
-data/raw/*.xlsx
-data/raw/*.json
-data/processed/*.parquet
-data/processed/*.csv
+# data/raw/*.parquet
+# data/raw/*.csv
+# data/raw/*.xlsx
+# data/raw/*.json
+# data/processed/*.parquet
+# data/processed/*.csv
 
 # Keep directory structure but ignore contents
-data/raw/.gitkeep
-data/processed/.gitkeep
+# data/raw/.gitkeep
+# data/processed/.gitkeep
 
 # Reports and outputs (can regenerate)
-reports/figures/*.png
-reports/summaries/*.csv
-reports/*.txt
+# reports/figures/*.png
+# reports/summaries/*.csv
+# reports/*.txt
 
 # Logs
 *.log
