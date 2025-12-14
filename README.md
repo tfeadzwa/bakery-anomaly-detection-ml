@@ -1,4 +1,4 @@
-# 🍞 SmartBakery: Anomaly Detection and Waste Reduction in Bakery Operations
+# 🍞Anomaly Detection and Waste Reduction in Bakery Operations
 
 **End-to-End Machine Learning System for Bakery Supply Chain Optimization**
 
