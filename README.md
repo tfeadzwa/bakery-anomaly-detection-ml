@@ -82,8 +82,8 @@ In addition to detecting anomalies, the system supports **demand forecasting** a
 
 ### **1. Clone Repository**
 ```bash
-git clone https://github.com/YOUR_USERNAME/taps-supply-chain-analytics.git
-cd taps-supply-chain-analytics
+git clone https://github.com/tfeadzwa/bakery-anomaly-detection-ml.git
+cd bakery-anomaly-detection-ml
 ```
 
 ### **2. Setup Environment**
