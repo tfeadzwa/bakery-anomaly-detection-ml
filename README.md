@@ -1,26 +1,31 @@
-# 🍞 TAPS - Supply Chain Analytics & Waste Prediction
+# 🍞 SmartBakery: Anomaly Detection and Waste Reduction in Bakery Operations
 
-**Advanced Analytics Platform for Bakery Supply Chain Optimization**
+**End-to-End Machine Learning System for Bakery Supply Chain Optimization**
 
-A comprehensive end-to-end analytics solution for predicting, preventing, and reducing waste across the entire bakery supply chain - from production to final delivery.
+An integrated data-driven analytics and machine learning platform that analyzes bakery production, logistics, sales, and quality data to detect anomalies, predict waste, and optimize supply-chain performance.
 
 ---
 
 ## 📋 Project Overview
 
-**Primary Goal:** 📉 How much waste can we predict, prevent, and reduce?
+SmartBakery is a data-driven analytics and machine learning project designed to detect operational anomalies and reduce product waste in bakery production and supply-chain operations. Using large-scale transactional data generated across the bakery lifecycle — including production, quality control, dispatch, retail sales, returns, waste, inventory movements, transport routes, equipment sensors, and calendar events — the system provides end-to-end visibility into how bread products are manufactured, distributed, sold, and lost.
 
-This project implements a complete supply chain intelligence system analyzing 10+ interconnected datasets spanning the entire value chain:
+The project applies **anomaly detection**, **time-series analysis**, and **predictive modeling** techniques to identify unusual patterns such as abnormal production volumes, quality defects, late or inefficient dispatch routes, mismatches between supply and demand, excessive returns, and avoidable waste. By linking batch-level production data with quality inspections, logistics metadata, point-of-sale demand signals, and environmental or equipment conditions, SmartBakery enables **root-cause analysis** of operational failures that lead to spoilage, stock-outs, or inefficiencies.
 
-- **Production** → Quality Control → Dispatch → Distribution → Sales → Returns/Waste → **Inventory Reconciliation**
+In addition to detecting anomalies, the system supports **demand forecasting** and **waste prediction** by incorporating contextual factors such as public holidays, promotions, regional demand differences, and route complexity. The resulting insights can be used to optimize production planning, improve dispatch scheduling, enhance quality control processes, and reduce financial losses caused by expired or unsold products.
 
-### 🎯 Key Objectives
+**SmartBakery demonstrates how machine learning and data analytics can be applied in a realistic bakery operations context to improve efficiency, sustainability, and decision-making, making it suitable for both academic research and practical industry adoption.**
 
-1. **Waste Prediction**: Build ML models to forecast waste 24-48 hours ahead
-2. **Root Cause Analysis**: Identify primary waste drivers (production, cold chain, logistics)
-3. **Preventive Interventions**: Quantify impact of quality improvements, route optimization, temperature control
-4. **ROI Quantification**: Calculate savings from waste reduction initiatives
-5. **Data Integrity**: Expose and fix critical reconciliation gaps across systems
+### 🔑 Core Capabilities
+
+- ✅ **Anomaly Detection** across production, logistics, and sales operations
+- ✅ **Batch-Level Traceability** and root-cause analysis for quality failures
+- ✅ **Waste & Returns Prediction** using supervised learning models
+- ✅ **Demand Forecasting** with holiday and promotion effects
+- ✅ **Route Performance Analysis** and dispatch optimization
+- ✅ **Inventory Reconciliation** and stock-out detection
+- ✅ **Multi-Source Data Integration** from 10+ operational datasets
+- ✅ **Real-Time IoT Analytics** for temperature and equipment monitoring
 
 ---
 
